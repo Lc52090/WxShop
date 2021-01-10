@@ -1,0 +1,67 @@
+/* 轮播图开始 */
+.index-swiper {
+    swiper {
+        width: 750rpx;
+        height: 340rpx;
+
+        navigator {
+            image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* 导航开始 */
+.idnex-cate {
+    display: flex;
+    margin-bottom: 20rpx;
+
+    navigator {
+        flex: 1;
+        height: 210rpx;
+
+        image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.index-floor {
+    .floor-group {
+        padding: 10rpx 0;
+        /* 标题 */
+        .floor-title {
+            image {
+                width: 100%;
+            }
+        }
+
+        /* 内容 */
+        .floor-list {
+            overflow: hidden;
+            navigator {
+                float: left;
+                width: 33.33%;
+                /* 后四张图片 */
+                &:nth-last-child(-n+4) {
+                    image {
+                        height: 33.33vw*386/232/2;
+                        border-left: 10rpx solid #ffffff;
+                    }
+                }
+                &:nth-child(2),&:nth-child(3){
+                    image {
+                        border-bottom: 10rpx solid #ffffff;
+                    }
+                }
+                image {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}

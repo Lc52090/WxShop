@@ -1,0 +1,49 @@
+<!-- 收货地址 -->
+<view class="revice-address-row">
+    <!-- 地址信息 -->
+    <view class="address-info">
+        <view class="userinfo">
+            <view>{{address.userName}}</view>
+            <view>{{address.all}}</view>
+        </view>
+        <view class="phone">{{address.telNumber}}</view>
+    </view>
+</view>
+<!-- 购物车内容 -->
+<view class="cart-content">
+    <view class="cart-title">购物车</view>
+    <!-- 购物车主要内容 -->
+    <view class="cart-main">
+        <view class="cart-item" wx:for="{{cart}}" wx:key="goods_id">
+            <!-- 商品图片结构 -->
+            <navigator class="cart-img-wrap">
+                <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+            </navigator>
+            <!-- 商品信息结构 -->
+            <view class="cart-info-wrap">
+                <!-- 商品名称 -->
+                <view class="goods-name">{{item.goods_name}}</view>
+                <!-- 商品价格 -->
+                <view class="goods-price-wrap">
+                    <view class="goods-price">￥{{item.goods_price}}</view>
+                    <view class="cart-num-tool">
+                        <view class="goods-num">×{{item.num}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 底部工具栏 -->
+<view class="footer-tool">
+    <!-- 总价格 -->
+    <view class="total-price-wrap">
+        <view class="total-prcie">
+            合计:
+            <text class="total-price-text">￥{{totalPrice}}</text>
+        </view>
+        <view class="car-text">包含运费</view>
+    </view>
+    <!-- 结算 -->
+    <view class="order-pay-wrap" bindtap="hanleOrderpay">支付({{totalNum}})</view>
+</view>

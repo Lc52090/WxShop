@@ -1,0 +1,32 @@
+<!-- pages/collect/index.wxml -->
+<tabs tabs="{{tabs}}" bindtabsItemChange="tabsItemChange">
+    <!-- 商品收藏 -->
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="collect-main">
+            <view class="collect-title">
+                <text class="collect-tips active">全部</text>
+                <text class="collect-tips">正在热卖</text>
+                <text class="collect-tips">即将上线</text>
+            </view>
+            <view class="collect-content">
+                <navigator class="collect-item" wx:for="{{collect}}" wx:key="collect_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+                    <!-- 左侧图片容器 -->
+                    <view class="collect-img-wrap">
+                        <image src="{{item.goods_small_logo?item.goods_small_logo:'../../icons/empty.jpg'}}" mode="widthFix"></image>
+                    </view>
+                    <!-- 右侧商品容器 -->
+                    <view class="collect-info-wrap">
+                        <view class="collect-name">{{item.goods_name}}</view>
+                        <view class="collect-price">¥{{item.goods_price}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </block>
+    <!-- 品牌收藏 -->
+    <block wx:elif="{{tabs[1].isActive}}">2</block>
+    <!-- 店铺收藏 -->
+    <block wx:elif="{{tabs[2].isActive}}">3</block>
+    <!-- 浏览器足迹 -->
+    <block wx:else>4</block>
+</tabs>

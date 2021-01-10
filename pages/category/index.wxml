@@ -1,0 +1,33 @@
+<!--pages/category/index.wxml-->
+<view class="cates">
+  <searchIpt></searchIpt>
+  <view class="cates-container">
+    <!-- 左侧菜单 -->
+    <scroll-view class="left-menu" scroll-y="true">
+      <view class="menu-item {{index===currentIndex?'active':''}}" wx:for="{{leftMenuList}}" bindtap="handleItemTap"
+        data-index="{{index}}" wx:key="*this">
+        {{item}}
+      </view>
+    </scroll-view>
+    <!-- 左侧菜单结束 -->
+
+    <!-- 右侧内容 -->
+    <scroll-view class="right-content" scroll-y="true" scroll-top="{{scrollTop}}">
+      <view class="group" wx:for="{{rightCotent}}" wx:key="cat_id" wx:for-item="item1" wx:for-index="index1">
+        <!-- 商品名称 -->
+        <view class="goods-title">
+          {{item1.cat_name}}
+        </view>
+        <!-- 商品列表 -->
+        <view class="goods-list">
+          <navigator wx:for="{{item1.children}}" wx:key="cat_id" wx:for-item="item2" wx:for-index="index2"
+            url="/pages/goods_list/index?cid={{item2.cat_id}}">
+            <image src="{{item2.cat_icon}}" mode="widthFix"></image>
+            <view>{{item2.cat_name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 右侧内容结束 -->
+  </view>
+</view>

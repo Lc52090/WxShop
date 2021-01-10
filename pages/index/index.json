@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchIpt":"../../components/search/searchIpt"
+  },
+  "navigationBarTitleText": "天天的首页"
+}

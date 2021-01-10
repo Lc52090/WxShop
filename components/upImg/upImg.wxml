@@ -1,0 +1,8 @@
+<view class="upimg-wrap">
+<image src="{{src}}" mode="aspectFill">
+    
+</image>
+<icon class="" type="clear" color="red">
+    
+</icon>
+</view>

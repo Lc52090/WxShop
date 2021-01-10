@@ -1,0 +1,66 @@
+page {
+    height: 100%;
+}
+
+.cates {
+    height: 100%;
+}
+
+.cates-container {
+    height: 100%;
+    display: flex;
+    margin-top: 10rpx;
+    /* 左侧菜单 */
+    .left-menu {
+        flex: 2;
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80rpx;
+            font-size: 30rpx;
+
+            &.active {
+                color: var(--themeColor);
+                border-left: 5rpx solid currentColor;
+            }
+        }
+    }
+
+    /* 右侧内容 */
+    .right-content {
+        flex: 5;
+
+        .group {
+
+            /* 商品名称 */
+            .goods-title {
+                text-align: center;
+                height: 80rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--themeColor);
+                color: #ffffff;
+            }
+
+            /* 商品列表 */
+            .goods-list {
+                navigator {
+                    width: 33.33%;
+                    display: inline-block;
+                    text-align: center;
+
+                    image {
+                        width: 50%;
+                    }
+
+                    view {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

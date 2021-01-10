@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchIpt": "../../components/search/searchIpt"
+  },
+  "navigationBarTitleText": "商品分类"
+}

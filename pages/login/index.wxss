@@ -1,0 +1,4 @@
+button[type='primary'][plain] {
+  margin: 30rpx 0;
+  width: 100%;
+}

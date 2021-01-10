@@ -1,0 +1,56 @@
+/* pages/collect/index.wxss */
+/* 商品收藏 */
+.collect-main {
+    background-color: #f3f4f6;
+
+    .collect-title {
+        padding: 40rpx 0;
+
+        .collect-tips {
+            padding: 15rpx;
+            border: 1px solid #cccccc;
+            margin-left: 25rpx;
+            background-color: #fff;
+
+            &.active {
+                color: var(--themeColor);
+                border-color: currentColor;
+            }
+        }
+    }
+
+    .collect-content {
+        .collect-item{
+            display: flex;
+            border-bottom: 1px solid #cccccc;
+            background-color: #fff;
+            /* 左侧图片容器 */
+            .collect-img-wrap{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 70%;
+                }
+            }
+            /* 右侧商品容器 */
+            .collect-info-wrap{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .collect-name{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient:center;
+                    -webkit-line-clamp:2 ;
+                }
+                .collect-price{
+                    color: var(--themeColor);
+                    font-size: 32rpx;
+                }
+            }
+        }
+    }
+}

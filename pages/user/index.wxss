@@ -1,0 +1,119 @@
+page {
+  background-color: #cccccc;
+}
+.userinfo-wrap {
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--themeColor);
+}
+.userinfo-wrap .img-wrap > image {
+  height: 50vh;
+  filter: blur(10rpx);
+}
+.userinfo-wrap .img-wrap .user-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.userinfo-wrap .img-wrap .user-info .user-icon {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.userinfo-wrap .img-wrap .user-info .user-name {
+  color: #ffffff;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+.userinfo-wrap .user-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1px solid greenyellow;
+  color: greenyellow;
+  font-size: 38rpx;
+  padding: 30rpx 60rpx;
+  border-radius: 10rpx;
+}
+/* 个人中心内容 */
+.user-content {
+  position: relative;
+}
+.user-content .user-main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100rpx;
+  width: 90%;
+  /* 历史足迹 */
+  /* 我的订单 */
+  /* 收货地址管理 */
+  /* 应用信息相关 */
+  /* 推荐 */
+}
+.user-content .user-main > view {
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+.user-content .user-main .history-wrap {
+  display: flex;
+}
+.user-content .user-main .history-wrap navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.user-content .user-main .history-wrap navigator .his-num {
+  color: var(--themeColor);
+}
+.user-content .user-main .orders-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.user-content .user-main .orders-wrap .orders-title {
+  color: 32rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user-content .user-main .orders-wrap .order-content {
+  display: flex;
+}
+.user-content .user-main .orders-wrap .order-content navigator {
+  flex: 1;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.user-content .user-main .orders-wrap .order-content navigator .iconfont {
+  color: var(--themeColor);
+  color: 32rpx;
+}
+.user-content .user-main .address-wrap {
+  margin-top: 20rpx;
+  padding: 15rpx;
+}
+.user-content .user-main .appinfo-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+.user-content .user-main .appinfo-wrap navigator {
+  border-bottom: 1px #ccc solid;
+  padding: 10rpx 20rpx;
+}
+.user-content .user-main .appinfo-wrap > view {
+  border-bottom: 1px #ccc solid;
+  padding: 10rpx 20rpx;
+}
+.user-content .user-main .appinfo-wrap > view.appinfo-item {
+  display: flex;
+  justify-content: space-between;
+}
+.user-content .user-main .appinfo-wrap > view:last-of-type {
+  border: none;
+}

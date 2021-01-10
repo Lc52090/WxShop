@@ -1,0 +1,60 @@
+page {
+  background-color: #eeeeee;
+}
+.fb-main {
+  padding: 20rpx;
+  color: #666;
+  /* 问题种类 */
+  /* 文本内容 */
+  /* 提交按钮 */
+}
+.fb-main .fb-tips {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb-main .fb-tips text {
+  width: 30%;
+  padding: 10rpx;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 20rpx 10rpx;
+}
+.fb-main .fb-content {
+  background-color: #ffffff;
+  margin-top: 20rpx;
+}
+.fb-main .fb-content textarea {
+  padding: 10rpx;
+}
+.fb-main .fb-content .fb-tool {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb-main .fb-content .fb-tool button {
+  padding: 0;
+  margin: 0;
+  width: 90rpx;
+  height: 90rpx;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  color: #cccccc;
+  border: 1rpx solid #cccccc;
+}
+.fb-main .fb-content .fb-tool .upimg-item {
+  margin: 0 11rpx;
+}
+.fb-main .form-btn {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.fb-main .form-btn button {
+  width: 30%;
+  background-color: var(--themeColor);
+  height: 80rpx;
+  color: #ffffff;
+}
+.fb-main .form-btn button:not([siez="mini"]) {
+  margin-left: 0;
+  margin-right: 0;
+}
