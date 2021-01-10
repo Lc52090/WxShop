@@ -38,7 +38,7 @@ Page({
     })
     for (let k = 0; k < res.length; k++) {
       res[k].product_list.forEach((v, i) => {
-        res[k].product_list[i].navigator_url = v.navigator_url.replace('?query', '/index?cid=' + (i + 4))
+        res[k].product_list[i].navigator_url = v.navigator_url.replace('?', '/index?')
       })
     }
     console.log(res)
